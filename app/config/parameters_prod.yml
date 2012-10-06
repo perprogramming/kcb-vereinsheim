@@ -1,0 +1,15 @@
+parameters:
+    database_driver:   pdo_mysql
+    database_host:     mysql5.sinfin.de
+    database_port:     ~
+    database_name:     db49905_9
+    database_user:     db49905_9
+    database_password: v3r31nsh31m
+
+    mailer_transport:  smtp
+    mailer_host:       smtp.sinfin.de
+    mailer_user:       dummy@sinfin.de
+    mailer_password:   dummy
+
+    locale:            de
+    secret:            i34b3b4fiu3h4f93f9b3458zfb3458f
