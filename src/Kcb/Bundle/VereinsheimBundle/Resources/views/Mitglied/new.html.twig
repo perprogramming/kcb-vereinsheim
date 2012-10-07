@@ -1,0 +1,17 @@
+<h1>Mitglied anlegen</h1>
+
+<form action="{{ path('kcb_vereinsheim_mitglied_create') }}" method="post" {{ form_enctype(form) }}>
+    {{ form_widget(form) }}
+    <p>
+        <button type="submit">Anlegen</button>
+    </p>
+</form>
+
+<h2>Was willst Du tun?</h2>
+<ul class="record_actions">
+    <li>
+        <a href="{{ path('kcb_vereinsheim_mitglied_index') }}">
+            Zurück zur Liste
+        </a>
+    </li>
+</ul>

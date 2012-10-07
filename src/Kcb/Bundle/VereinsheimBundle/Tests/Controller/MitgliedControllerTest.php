@@ -4,7 +4,7 @@ namespace Kcb\Bundle\VereinsheimBundle\Tests\Controller;
 
 use Symfony\Bundle\FrameworkBundle\Test\WebTestCase;
 
-class AnwesenderControllerTest extends WebTestCase
+class MitgliedControllerTest extends WebTestCase
 {
     /*
     public function testCompleteScenario()
@@ -13,13 +13,13 @@ class AnwesenderControllerTest extends WebTestCase
         $client = static::createClient();
 
         // Create a new entry in the database
-        $crawler = $client->request('GET', '/anwesender/');
+        $crawler = $client->request('GET', '/mitglieder/');
         $this->assertTrue(200 === $client->getResponse()->getStatusCode());
         $crawler = $client->click($crawler->selectLink('Create a new entry')->link());
 
         // Fill in the form and submit it
         $form = $crawler->selectButton('Create')->form(array(
-            'kcb_bundle_vereinsheimbundle_anwesendertype[field_name]'  => 'Test',
+            'kcb_bundle_vereinsheimbundle_mitgliedtype[field_name]'  => 'Test',
             // ... other fields to fill
         ));
 
@@ -33,7 +33,7 @@ class AnwesenderControllerTest extends WebTestCase
         $crawler = $client->click($crawler->selectLink('Edit')->link());
 
         $form = $crawler->selectButton('Edit')->form(array(
-            'kcb_bundle_vereinsheimbundle_anwesendertype[field_name]'  => 'Foo',
+            'kcb_bundle_vereinsheimbundle_mitgliedtype[field_name]'  => 'Foo',
             // ... other fields to fill
         ));
 

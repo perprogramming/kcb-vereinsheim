@@ -1,0 +1,18 @@
+<h1>Dein Anwesenheitsstatus</h1>
+{% if anwesender %}
+    <p>Du bist seit {{ anwesender.ankunft.format('d.m.Y, H:i:s') }} Uhr im Vereinsheim.</p>
+{% else %}
+    <p>Du bist zur Zeit nicht im Vereinsheim.</p>
+{% endif %}
+
+<h2>Was willst Du tun?</h2>
+<ul>
+    <li>
+        <form method="post" action="{{ path('kcb_vereinsheim_anwesender_toggle') }}">
+            <div>
+                <input type="submit" value="Status ändern" />
+            </div>
+        </form>
+    </li>
+    <li><a href="{{ path('kcb_vereinsheim_startseite_index') }}">Zurück zur Startseite</a></li>
+</ul>

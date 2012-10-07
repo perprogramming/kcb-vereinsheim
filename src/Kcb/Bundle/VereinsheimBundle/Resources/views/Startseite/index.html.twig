@@ -1,0 +1,9 @@
+<h1>Willkommen im Vereinsheim der Kicker Crew Bonn</h1>
+
+{% render "KcbVereinsheimBundle:Startseite:anwesende" %}
+
+<h2>Was willst Du tun?</h2>
+<ul>
+    <li><a href="{{ path('kcb_vereinsheim_anwesender_status') }}">Deinen Anwesenheitsstatus ändern</a></li>
+    <li><a href="{{ path('kcb_vereinsheim_mitglied_index') }}">Mitglieder verwalten</a></li>
+</ul>

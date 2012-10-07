@@ -4,5 +4,5 @@
 #    prefix:   /_internal
 
 kcb_vereinsheim:
-     resource: "@KcbVereinsheimBundle/Controller"
-     type: annotation
+    resource: "@KcbVereinsheimBundle/Controller"
+    type: annotation

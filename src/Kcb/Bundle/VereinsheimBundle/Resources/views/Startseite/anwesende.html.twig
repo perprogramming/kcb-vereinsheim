@@ -1,0 +1,13 @@
+<h2>Wer ist zur Zeit anwesend?</h2>
+{% if anwesende %}
+    <p>Zur Zeit sind folgende Mitglieder im Vereinsheim:</p>
+    <ul>
+        {% for anwesender in anwesende %}
+            <li>
+                {{ anwesender.mitglied.name }} (seit {{ anwesender.ankunft.format('d.m.Y H:i:s') }})
+            </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <p>Zur Zeit sind keine Mitglieder im Vereinsheim.</p>
+{% endif %}
