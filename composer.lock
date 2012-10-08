@@ -1,5 +1,5 @@
 {
-    "hash": "5aa2ba8477a9892811f90f5c5d901fe3",
+    "hash": "447ca4e2661532f35ad4e5ec2e738988",
     "packages": [
         {
             "name": "doctrine/common",
@@ -374,6 +374,45 @@
                 "orm"
             ],
             "time": "1348121015"
+        },
+        {
+            "name": "genphrase/genphrase",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timoh6/GenPhrase.git",
+                "reference": "8f6c6f69cd1f53d2f33bd8e7e7941dc6cece200e"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://github.com/timoh6/GenPhrase/zipball/8f6c6f69cd1f53d2f33bd8e7e7941dc6cece200e",
+                "reference": "8f6c6f69cd1f53d2f33bd8e7e7941dc6cece200e",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "time": "1346756270",
+            "type": "library",
+            "installation-source": "source",
+            "autoload": {
+                "psr-0": {
+                    "GenPhrase": "library/"
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "description": "Secure passphrase generator for PHP applications",
+            "homepage": "https://github.com/timoh6/GenPhrase",
+            "keywords": [
+                "generator",
+                "password",
+                "random",
+                "secure",
+                "passphrase",
+                "diceware"
+            ]
         },
         {
             "name": "jms/aop-bundle",
@@ -1311,6 +1350,7 @@
     ],
     "minimum-stability": "dev",
     "stability-flags": {
-        "doctrine/doctrine-migrations-bundle": 20
+        "doctrine/doctrine-migrations-bundle": 20,
+        "genphrase/genphrase": 20
     }
 }

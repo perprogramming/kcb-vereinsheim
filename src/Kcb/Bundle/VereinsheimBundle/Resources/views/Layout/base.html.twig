@@ -1,0 +1,17 @@
+{% extends "::base.html.twig" %}
+
+{% block title %}KCB Vereinsheim{% endblock %}
+
+{% block body %}
+    {% block content %}{% endblock %}
+    <h2>Was möchtest Du tun</h2>
+    <ul>
+        {% block actions %}
+            {% if not app.user %}
+                <li><a href="{{ path('kcb_vereinsheim_authentication_login') }}">Einloggen</a></li>
+            {% else %}
+                <li><a href="{{ path('kcb_vereinsheim_authentication_logout') }}">Ausloggen</a></li>
+            {% endif %}
+        {% endblock %}
+    </ul>
+{% endblock %}

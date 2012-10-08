@@ -2,27 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88efc301-720f-4476-8a19-dcb9e6ba8aa1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AuthenticationController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/StartseiteController.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/status.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Email/mitglied-angelegt.txt.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/anwesende.html.twig" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/index.html.twig" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20121006161123.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Anwesender.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/AnwesenderRepository.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Form/AnwesenderType.php" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/edit.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/index.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/new.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/show.html.twig" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Tests/Controller/AnwesenderControllerTest.php" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/DependencyInjection/KcbVereinsheimExtension.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/config/services.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/translations/messages.de.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Authentication/login.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/startseite.html.twig" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/index.html.twig" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Email/mitglied-angelegt.txt.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Email/neues-mitglied.txt.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/anwesende.html.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/startseiteAnwesende.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/parameters_dev.yml" afterPath="$PROJECT_DIR$/app/config/parameters_dev.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AnwesenderController.php" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AnwesenderController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AuthenticationController.php" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AuthenticationController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/StartseiteController.php" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/StartseiteController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Form/MitgliedType.php" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Form/MitgliedType.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/status.html.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/status.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/edit.html.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/edit.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/new.html.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/new.html.twig" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig" />
     </list>
     <ignored path="kcb-vereinsheim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -42,73 +46,49 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/index.html.twig">
+      <file leaf-file-name="messages.de.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/translations/messages.de.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="98" selection-start="246" selection-end="246" vertical-scroll-proportion="-3.75">
+            <state line="10" column="50" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="status.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/status.html.twig">
+      <file leaf-file-name="Mitglied.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="95" selection-start="476" selection-end="567" vertical-scroll-proportion="-10.0">
+            <state line="42" column="20" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-26.25">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig">
+      <file leaf-file-name="login.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Authentication/login.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="40" column="0" selection-start="1171" selection-end="1198" vertical-scroll-proportion="-8.125">
+            <state line="5" column="114" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0764526">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="new.html.twig" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/new.html.twig">
+      <file leaf-file-name="CreateAdminCommand.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="256" selection-end="256" vertical-scroll-proportion="0.42319748">
-              <folding />
+            <state line="44" column="78" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-24.625">
+              <folding>
+                <marker date="1349686452000" expanded="true" signature="2216:2302" placeholder="..." />
+                <marker date="1349686452000" expanded="true" signature="2216:2309" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="edit.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/edit.html.twig">
+      <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="27" selection-start="292" selection-end="292" vertical-scroll-proportion="-4.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="27" selection-start="761" selection-end="761" vertical-scroll-proportion="-4.375">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="AnwesenderController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AnwesenderController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="88" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-18.708334">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="anwesende.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/anwesende.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="333" selection-end="333" vertical-scroll-proportion="-5.625">
+            <state line="5" column="43" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -127,22 +107,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/AnwesenderRepository.php" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php" />
-        <option value="$PROJECT_DIR$/app/config/routing.yml" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AuthenticationController.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/DependencyInjection/Extension.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Email/neues-mitglied.txt.twig" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/anwesende.html.twig.html" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/StartseiteController.php" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/anwesende.html.twig" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AnwesenderController.php" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/status.html.twig" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/edit.html.twig" />
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/new.html.twig" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Form/MitgliedType.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/MitgliedFactory.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/MitgliedPasswordGenerator.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/config/services.xml" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Authentication/login.html.twig" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/translations/messages.de.yml" />
+        <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php" />
       </list>
     </option>
   </component>
@@ -154,8 +134,8 @@
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1280" />
-    <option name="height" value="774" />
+    <option name="width" value="2560" />
+    <option name="height" value="1414" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -199,20 +179,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="kcb-vereinsheim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kcb-vereinsheim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="kcb-vereinsheim" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -365,6 +331,86 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kcb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VereinsheimBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Email" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kcb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VereinsheimBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Authentication" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -401,6 +447,104 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Anwesender" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kcb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VereinsheimBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="translations" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kcb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VereinsheimBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kcb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VereinsheimBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Form" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -474,6 +618,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kcb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VereinsheimBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Command" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -523,6 +697,9 @@
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/config" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
@@ -565,7 +742,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1280" height="774" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1414" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -573,13 +750,13 @@
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Framework" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3298217" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39969373" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20185615" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32924962" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24959481" sideWeight="0.32618684" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25364667" sideWeight="0.6003063" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.124502786" sideWeight="0.79814386" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -640,118 +817,121 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="12" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/AnwesenderRepository.php">
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/KeyCache/DiskKeyCache.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="5" selection-start="450" selection-end="450" vertical-scroll-proportion="-8.125">
+        <state line="326" column="0" selection-start="9261" selection-end="9261" vertical-scroll-proportion="0.87767583">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php">
+    <entry file="file://$PROJECT_DIR$/vendor/swiftmailer/swiftmailer/lib/classes/Swift/Mime/SimpleMimeEntity.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="19" selection-start="724" selection-end="724" vertical-scroll-proportion="-1.4166666">
+        <state line="818" column="0" selection-start="22752" selection-end="22752" vertical-scroll-proportion="0.55657494">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Anwesender.php">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/config/services.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="0" selection-start="940" selection-end="940" vertical-scroll-proportion="0.6920821">
+        <state line="8" column="18" selection-start="463" selection-end="463" vertical-scroll-proportion="0.11940298">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="245" selection-end="245" vertical-scroll-proportion="0.0">
+        <state line="81" column="0" selection-start="2255" selection-end="2255" vertical-scroll-proportion="0.6116208">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AuthenticationController.php">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters_dev.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="7" selection-start="308" selection-end="308" vertical-scroll-proportion="-8.125">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+    <entry file="file://$PROJECT_DIR$/app/config/parameters_prod.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="27" selection-start="500" selection-end="500" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/StartseiteController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Console/Application.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="18" selection-start="437" selection-end="437" vertical-scroll-proportion="-9.625">
+        <state line="130" column="0" selection-start="3759" selection-end="3759" vertical-scroll-proportion="0.33333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/monolog/monolog/src/Monolog/Handler/AbstractHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="162" column="0" selection-start="3694" selection-end="3694" vertical-scroll-proportion="0.72477067">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="79" column="49" selection-start="1422" selection-end="1422" vertical-scroll-proportion="-5.625">
+        <state line="42" column="20" selection-start="1007" selection-end="1007" vertical-scroll-proportion="-26.25">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/anwesende.html.twig">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Translation/IdentityTranslator.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="333" selection-end="333" vertical-scroll-proportion="-5.625">
+        <state line="61" column="0" selection-start="1103" selection-end="1103" vertical-scroll-proportion="0.7094801">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/ConstraintViolation.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="98" selection-start="246" selection-end="246" vertical-scroll-proportion="-3.75">
+        <state line="104" column="58" selection-start="2466" selection-end="2466" vertical-scroll-proportion="0.55657494">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AnwesenderController.php">
+    <entry file="file://$PROJECT_DIR$/vendor/symfony/symfony/src/Symfony/Component/Validator/ConstraintViolationList.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="88" selection-start="1145" selection-end="1145" vertical-scroll-proportion="-18.708334">
+        <state line="169" column="0" selection-start="3611" selection-end="3611" vertical-scroll-proportion="0.5198777">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/status.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="95" selection-start="476" selection-end="567" vertical-scroll-proportion="-10.0">
+        <state line="5" column="43" selection-start="121" selection-end="121" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/translations/messages.de.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="27" selection-start="761" selection-end="761" vertical-scroll-proportion="-4.375">
+        <state line="10" column="50" selection-start="422" selection-end="422" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/edit.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="292" selection-end="292" vertical-scroll-proportion="-4.0">
-          <folding />
+        <state line="44" column="78" selection-start="1842" selection-end="1842" vertical-scroll-proportion="-24.625">
+          <folding>
+            <marker date="1349686452000" expanded="true" signature="2216:2302" placeholder="..." />
+            <marker date="1349686452000" expanded="true" signature="2216:2309" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Authentication/login.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="40" column="0" selection-start="1171" selection-end="1198" vertical-scroll-proportion="-8.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="27" selection-start="256" selection-end="256" vertical-scroll-proportion="0.42319748">
+        <state line="5" column="114" selection-start="236" selection-end="236" vertical-scroll-proportion="0.0764526">
           <folding />
         </state>
       </provider>

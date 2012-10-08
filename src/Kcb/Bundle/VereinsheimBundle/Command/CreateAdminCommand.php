@@ -12,29 +12,54 @@ class CreateAdminCommand extends ContainerAwareCommand {
 
     protected function configure() {
         $this
-            ->setName('kcb:vereinsheim:create-admin')
-            ->addArgument('login', InputArgument::REQUIRED)
-            ->addArgument('password', InputArgument::REQUIRED);
+            ->setName('kcb:vereinsheim:create-admin');
     }
 
     protected function execute(InputInterface $input, OutputInterface $output) {
         $em = $this->getContainer()->get('doctrine')->getManager();
+        $dialog = $this->getHelperSet()->get('dialog');
+        $validator = $this->getContainer()->get('validator');
+        $translator = $this->getContainer()->get('translator');
 
         $admin = new Mitglied();
-        $admin->setBenutzername($input->getArgument('login'));
+        $admin->addRolle('ROLE_ADMIN');
 
-        $encoder = $this->getContainer()->get('security.encoder_factory')->getEncoder($admin);
-        $admin->setPasswort(
-            $encoder->encodePassword(
-                $input->getArgument('password'),
-                $admin->getSalt()
-            )
-        );
+        $output->writeln('<info>Bitte gib die Daten des Administrators ein:</info>');
+        foreach (array(
+            'vorname' => 'Vorname',
+            'nachname' => 'Nachname',
+            'email' => 'E-Mail',
+            'handynummer' => 'Handynummer'
+        ) as $property => $label) {
+            $dialog->askAndValidate($output, '<question>' . $label . ':</question> ', function($value) use ($translator, $validator, $property, $admin) {
+                $setter = 'set' . ucfirst($property);
+                $admin->$setter($value);
+                if (($errors = $validator->validateProperty($admin, $property)) && count($errors)) {
+                    throw new \Exception($translator->trans($errors[0]->getMessage()));
+                }
+            });
+        }
 
-        $admin->addRole('ROLE_ADMIN');
+        $errors = $validator->validate($admin);
+        if (count($errors)) {
+            throw new \Exception($translator->trans($errors[0]->getMessage()));
+        }
+
+        $plainPassword = $this->getContainer()->get('password_generator')->generate();
+
+        $password = $this->getContainer()->get('security.encoder_factory')->getEncoder($admin)->encodePassword($plainPassword, $admin->getSalt());
+        $admin->setPasswort($password);
 
         $em->persist($admin);
         $em->flush();
+
+        $output->writeln("
+<info>
+    Der Admin-Zugang wurde angelegt. Das Passwort lautet
+
+            $plainPassword
+</info>
+");
     }
 
 }

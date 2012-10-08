@@ -1,17 +1,13 @@
-<h1>Mitglied anlegen</h1>
+{% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
 
-<form action="{{ path('kcb_vereinsheim_mitglied_create') }}" method="post" {{ form_enctype(form) }}>
-    {{ form_widget(form) }}
-    <p>
-        <button type="submit">Anlegen</button>
-    </p>
-</form>
+{% block content %}
+    <h1>Neues Mitglied anlegen</h1>
+    <form action="{{ path('kcb_vereinsheim_mitglied_create') }}" method="post" {{ form_enctype(form) }}>
+        {{ form_widget(form) }}
+        <div><input type="submit" value="Anlegen" /></div>
+    </form>
+{% endblock %}
 
-<h2>Was willst Du tun?</h2>
-<ul class="record_actions">
-    <li>
-        <a href="{{ path('kcb_vereinsheim_mitglied_index') }}">
-            Zurück zur Liste
-        </a>
-    </li>
-</ul>
+{% block actions %}
+    <li><a href="{{ path('kcb_vereinsheim_mitglied_index') }}">Abbrechen</a></li>
+{% endblock %}

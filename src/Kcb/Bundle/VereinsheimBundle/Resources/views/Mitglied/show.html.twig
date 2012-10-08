@@ -1,50 +1,35 @@
-<h1>Mitglied {{ entity.vorname }} {{ entity.nachname }}</h1>
+{% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
 
-<table class="record_properties">
-    <tbody>
-        <tr>
-            <th>ID</th>
-            <td>{{ entity.id }}</td>
-        </tr>
-        <tr>
-            <th>Vorname</th>
-            <td>{{ entity.vorname }}</td>
-        </tr>
-        <tr>
-            <th>Nachname</th>
-            <td>{{ entity.nachname }}</td>
-        </tr>
-        <tr>
-            <th>Benutzername</th>
-            <td>{{ entity.benutzername }}</td>
-        </tr>
-        <tr>
-            <th>E-Mail-Adresse</th>
-            <td>{{ entity.email }}</td>
-        </tr>
-        <tr>
-            <th>Handynummer</th>
-            <td>{{ entity.handynummer }}</td>
-        </tr>
-    </tbody>
-</table>
+{% block content %}
+    <h1>Mitglied {{ entity.vorname }} {{ entity.nachname }}</h1>
 
-<h2>Was willst Du tun?</h2>
-<ul class="record_actions">
-    <li>
-        <a href="{{ path('kcb_vereinsheim_mitglied_index') }}">
-            Zurück zur Liste
-        </a>
-    </li>
-    <li>
-        <a href="{{ path('kcb_vereinsheim_mitglied_edit', { 'id': entity.id }) }}">
-            Bearbeiten
-        </a>
-    </li>
-    <li>
-        <form action="{{ path('kcb_vereinsheim_mitglied_delete', { 'id': entity.id }) }}" method="post">
-            {{ form_widget(delete_form) }}
-            <button type="submit">Löschen</button>
-        </form>
-    </li>
-</ul>
+    <table class="record_properties">
+        <tbody>
+            <tr>
+                <th>ID</th>
+                <td>{{ entity.id }}</td>
+            </tr>
+            <tr>
+                <th>Vorname</th>
+                <td>{{ entity.vorname }}</td>
+            </tr>
+            <tr>
+                <th>Nachname</th>
+                <td>{{ entity.nachname }}</td>
+            </tr>
+            <tr>
+                <th>E-Mail-Adresse</th>
+                <td>{{ entity.email }}</td>
+            </tr>
+            <tr>
+                <th>Handynummer</th>
+                <td>{{ entity.handynummer }}</td>
+            </tr>
+        </tbody>
+    </table>
+{%  endblock %}
+
+{% block actions %}
+    <li><a href="{{ path('kcb_vereinsheim_mitglied_edit', { 'id': entity.id }) }}">Bearbeiten</a></li>
+    <li><a href="{{ path('kcb_vereinsheim_mitglied_index') }}">Abbrechen</a></li>
+{% endblock %}

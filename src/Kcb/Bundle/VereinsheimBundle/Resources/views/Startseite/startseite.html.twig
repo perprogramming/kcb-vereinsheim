@@ -1,0 +1,12 @@
+{% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
+
+{% block content %}
+    <h1>Willkommen im Vereinsheim der Kicker Crew Bonn</h1>
+    {% render "KcbVereinsheimBundle:Startseite:startseiteAnwesende" %}
+{% endblock %}
+
+{% block actions %}
+    {% if is_granted('ROLE_MITGLIED') %}<li><a href="{{ path('kcb_vereinsheim_anwesender_status') }}">Deinen Anwesenheitsstatus ändern</a></li>{% endif %}
+    {% if is_granted('ROLE_ADMIN') %}<li><a href="{{ path('kcb_vereinsheim_mitglied_index') }}">Mitglieder verwalten</a></li>{% endif %}
+    {{ parent() }}
+{% endblock %}

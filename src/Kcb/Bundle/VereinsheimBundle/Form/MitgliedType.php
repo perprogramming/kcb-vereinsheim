@@ -13,9 +13,16 @@ class MitgliedType extends AbstractType
         $builder
             ->add('vorname')
             ->add('nachname')
-            ->add('benutzername')
             ->add('email', 'email')
             ->add('handynummer')
+            ->add('rollen', 'choice', array(
+                'choices' => array(
+                    'ROLE_MITGLIED' => 'Mitglied',
+                    'ROLE_ADMIN' => 'Admin'
+                ),
+                'multiple' => true,
+                'expanded' => true
+            ))
         ;
     }
 

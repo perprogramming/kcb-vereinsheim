@@ -1,49 +1,46 @@
-<h1>Mitglieder Liste</h1>
+{% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
 
-<table class="records_list">
-    <thead>
-        <tr>
-            <th>Vorname</th>
-            <th>Nachname</th>
-            <th>Rollen</th>
-            <th>Aktionen</th>
-        </tr>
-    </thead>
-    <tbody>
-    {% for entity in entities %}
-        <tr>
-            <td>{{ entity.vorname }}</td>
-            <td>{{ entity.nachname }}</td>
-            <td>
-                {% set roleLabels = {
-                    ROLE_ADMIN: 'Admin',
-                    ROLE_MITGLIED: 'Mitglied'
-                } %}
-                {% for role in entity.roles %}
-                    {{ attribute(roleLabels,role) }}{% if not loop.last %}, {% endif %}
-                {% endfor %}
-            </td>
-            <td>
-                <ul>
-                    <li>
-                        <a href="{{ path('kcb_vereinsheim_mitglied_show', { 'id': entity.id }) }}">Öffnen</a>
-                    </li>
-                    <li>
-                        <a href="{{ path('kcb_vereinsheim_mitglied_edit', { 'id': entity.id }) }}">Bearbeiten</a>
-                    </li>
-                </ul>
-            </td>
-        </tr>
-    {% endfor %}
-    </tbody>
-</table>
+{% block content %}
+    <h1>Mitglieder verwalten</h1>
 
-<h2>Was willst Du tun?</h2>
-<ul>
-    <li>
-        <a href="{{ path('kcb_vereinsheim_mitglied_new') }}">
-            Neues Mitglied anlegen
-        </a>
-    </li>
-    <li><a href="{{ path('kcb_vereinsheim_startseite_index') }}">Zurück zur Startseite</a></li>
-</ul>
+    <table class="records_list">
+        <thead>
+            <tr>
+                <th>Vorname</th>
+                <th>Nachname</th>
+                <th>Rollen</th>
+                <th>Aktionen</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for entity in entities %}
+            <tr>
+                <td>{{ entity.vorname }}</td>
+                <td>{{ entity.nachname }}</td>
+                <td>
+                    {% set roleLabels = {
+                        ROLE_ADMIN: 'Admin',
+                        ROLE_MITGLIED: 'Mitglied'
+                    } %}
+                    {% for role in entity.roles %}
+                        {{ attribute(roleLabels,role) }}{% if not loop.last %}, {% endif %}
+                    {% endfor %}
+                </td>
+                <td>
+                    <ul>
+                        <li><a href="{{ path('kcb_vereinsheim_mitglied_show', { 'id': entity.id }) }}">Öffnen</a></li>
+                        <li><a href="{{ path('kcb_vereinsheim_mitglied_edit', { 'id': entity.id }) }}">Bearbeiten</a></li>
+                        <li><form action="{{ path('kcb_vereinsheim_mitglied_delete', { 'id': entity.id }) }}" method="post"><div><input type="submit" value="Löschen" /></div></li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}
+
+{% block actions %}
+    <li><a href="{{ path('kcb_vereinsheim_mitglied_new') }}">Neues Mitglied anlegen</a></li>
+    <li><a href="{{ path('kcb_vereinsheim_startseite_startseite') }}">Zurück zur Startseite</a></li>
+    {{ parent() }}
+{% endblock %}

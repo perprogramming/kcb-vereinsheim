@@ -13,19 +13,15 @@ security:
         mitglieder:
             entity:
                 class: Kcb\Bundle\VereinsheimBundle\Entity\Mitglied
-                property: benutzername
+                property: email
 
     firewalls:
-        startseite:
-            pattern:    ^/$
-            security: false
         secured_area:
             pattern:    ^/
-            http_basic: ~
-            logout:
-                path:   /authentication/logout
-                target: /
+            anonymous:
+            form_login: ~
+            logout: ~
 
     access_control:
-        - { path: ^/anwesende, roles: ROLE_MITGLIED }
-        - { path: ^/mitglieder, roles: ROLE_ADMIN }
+#        - { path: ^/anwesende, roles: ROLE_MITGLIED }
+#        - { path: ^/mitglieder, roles: ROLE_ADMIN }

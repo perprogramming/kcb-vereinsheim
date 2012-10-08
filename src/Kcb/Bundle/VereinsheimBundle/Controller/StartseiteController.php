@@ -12,14 +12,14 @@ class StartseiteController extends Controller {
      * @Route("/")
      * @Template()
      */
-    public function indexAction() {
+    public function startseiteAction() {
         return array();
     }
 
     /**
      * @Template()
      */
-    public function anwesendeAction() {
+    public function startseiteAnwesendeAction() {
         return array('anwesende' => $this->getDoctrine()->getRepository('KcbVereinsheimBundle:Anwesender')->findAll());
     }
 

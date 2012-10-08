@@ -4,9 +4,12 @@ namespace Kcb\Bundle\VereinsheimBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Symfony\Component\Security\Core\User\UserInterface;
+use Symfony\Component\Validator\Constraints as Assert;
+use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass="Kcb\Bundle\VereinsheimBundle\Entity\MitgliedRepository")
+ * @UniqueEntity(fields={"email"}, message="mitglied.email.already_in_use")
  */
 class Mitglied implements UserInterface {
 
@@ -19,38 +22,43 @@ class Mitglied implements UserInterface {
 
     /**
      * @ORM\Column
+     * @Assert\NotBlank(message="mitglied.vorname.not_blank")
      */
-    protected $vorname = '';
+    protected $vorname;
+
+    /**
+     * @ORM\Column
+     * @Assert\NotBlank(message="mitglied.nachname.not_blank")
+     */
+    protected $nachname;
 
     /**
      * @ORM\Column
      */
-    protected $nachname = '';
+    protected $passwort;
 
     /**
      * @ORM\Column
+     * @Assert\NotBlank(message="mitglied.email.not_blank")
+     * @Assert\Email(message="mitglied.email.valid")
      */
-    protected $benutzername = '';
+    protected $email;
 
     /**
      * @ORM\Column
-     */
-    protected $passwort = '';
-
-    /**
-     * @ORM\Column
-     */
-    protected $email = '';
-
-    /**
-     * @ORM\Column
+     * @Assert\NotBlank(message="mitglied.handynummer.not_blank")
      */
     protected $handynummer = '';
 
     /**
      * @ORM\Column(type="array")
      */
-    protected $roles = array('ROLE_MITGLIED');
+    protected $rollen = array('ROLE_MITGLIED');
+
+    /**
+     * @ORM\OneToOne(targetEntity="Anwesender", mappedBy="mitglied", cascade={"remove"})
+     */
+    protected $anwesender;
 
     public function getSalt() {
         return 'kcb!';
@@ -80,14 +88,6 @@ class Mitglied implements UserInterface {
         return $this->vorname . ' ' . $this->nachname;
     }
 
-    public function setBenutzername($benutzername) {
-        $this->benutzername = $benutzername;
-    }
-
-    public function getBenutzername() {
-        return $this->benutzername;
-    }
-
     public function setPasswort($passwort) {
         $this->passwort = $passwort;
     }
@@ -112,13 +112,17 @@ class Mitglied implements UserInterface {
         return $this->handynummer;
     }
 
-    public function getRoles() {
-        return $this->roles;
+    public function getRollen() {
+        return $this->rollen;
     }
 
-    public function addRole($role) {
-        if (!in_array($role, $this->roles)) {
-            $this->roles[] = $role;
+    public function setRollen(array $rollen) {
+        $this->rollen = $rollen;
+    }
+
+    public function addRolle($rolle) {
+        if (!in_array($rolle, $this->rollen)) {
+            $this->rollen[] = $rolle;
         }
     }
 
@@ -127,7 +131,11 @@ class Mitglied implements UserInterface {
     }
 
     public function getUsername() {
-        return $this->getBenutzername();
+        return $this->getEmail();
+    }
+
+    public function getRoles() {
+        return $this->rollen;
     }
 
     public function eraseCredentials() {
