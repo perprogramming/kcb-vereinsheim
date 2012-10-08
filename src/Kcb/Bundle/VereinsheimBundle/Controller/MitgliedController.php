@@ -86,7 +86,7 @@ class MitgliedController extends Controller
                 ->setSubject('Willkommen')
                 ->setFrom('vh@kickercrewbonn.de', 'Vereinsheim Kicker Crew Bonn')
                 ->setTo($entity->getEmail())
-                ->setBody($this->render('KcbVereinsheimBundle:Email:neues-mitglied.txt.twig', array(
+                ->setBody($this->renderView('KcbVereinsheimBundle:Email:neues-mitglied.txt.twig', array(
                     'mitglied' => $entity,
                     'passwort' => $plainPassword
                 )));

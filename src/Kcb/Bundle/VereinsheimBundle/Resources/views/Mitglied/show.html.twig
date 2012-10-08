@@ -5,7 +5,7 @@
     ROLE_MITGLIED: 'Mitglied'
 } %}
 
-{% block pageTitle %}Mitglied {{ entity.vorname }} {{ entity.nachname }}{% endblock %}
+{% block pageTitle %}{{ entity.vorname }} {{ entity.nachname }}{% endblock %}
 
 {% block content %}
     <div><strong>E-Mail-Adresse:</strong> <a href="mailto:{{ entity.email }}">{{ entity.email }}</a></div>
