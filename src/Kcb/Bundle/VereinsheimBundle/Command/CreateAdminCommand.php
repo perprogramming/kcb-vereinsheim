@@ -30,7 +30,7 @@ class CreateAdminCommand extends ContainerAwareCommand {
             'email' => 'E-Mail',
             'handynummer' => 'Handynummer'
         ) as $property => $label) {
-            $dialog->askAndValidate($output, '<question>' . $label . ':</question> ', function($value) use ($translator, $validator, $property, $admin) {
+            $dialog->askAndValidate($output, '<question>' . $label . ':</question> ', function($value) use ($validator, $property, $admin) {
                 $setter = 'set' . ucfirst($property);
                 $admin->$setter($value);
                 if (($errors = $validator->validateProperty($admin, $property)) && count($errors)) {

@@ -1,11 +1,10 @@
 {% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
 
-{% block pageTitle %}Mitglied {{ anwesender.mitglied.vorname }} {{ anwesender.mitglied.nachname }}{% endblock %}
+{% block pageTitle %}Anwesenheitsstatus{% endblock %}
 
 {% block content %}
-    <div>{{ anwesender.mitglied.vorname }} {{ anwesender.mitglied.nachname }} ist seit {{ anwesender.ankunft.format('d.m.Y H:i:s') }} Uhr im Vereinsheim.</div>
-    <div><strong>E-Mail-Adresse:</strong> <a href="mailto:{{ anwesender.mitglied.email }}">{{ anwesender.mitglied.email }}</a></div>
-    <div><strong>Handynummer:</strong> {{ anwesender.mitglied.handynummer }}</div>
+    {% include "KcbVereinsheimBundle:Mitglied:_teaser.html.twig" with {mitglied: anwesender.mitglied} %}
+    <div><strong>Anwesend seit:</strong> {{ anwesender.ankunft.format('d.m.Y, H:i:s') }} Uhr</div>
 {%  endblock %}
 
 {% block actions %}

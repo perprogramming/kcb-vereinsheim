@@ -5,11 +5,10 @@
     ROLE_MITGLIED: 'Mitglied'
 } %}
 
-{% block pageTitle %}{{ entity.vorname }} {{ entity.nachname }}{% endblock %}
+{% block pageTitle %}Mitglied{% endblock %}
 
 {% block content %}
-    <div><strong>E-Mail-Adresse:</strong> <a href="mailto:{{ entity.email }}">{{ entity.email }}</a></div>
-    <div><strong>Handynummer:</strong> {{ entity.handynummer }}</div>
+    {% include "KcbVereinsheimBundle:Mitglied:_teaser.html.twig" with {mitglied: entity} %}
     <h2>Rollen</h2>
     <ul>
         {% for role in entity.roles %}

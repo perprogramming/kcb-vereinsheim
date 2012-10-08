@@ -1,0 +1,17 @@
+{% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
+
+{% block pageTitle %}Aktivierung{% endblock %}
+
+{% block content %}
+    {% if activated %}
+        <h2>Vielen Dank!</h2>
+        <p>Deine E-Mail-Adresse wurde zu {{ neueEmail }} geändert.</p>
+    {% else %}
+        <h2>Sorry!</h2>
+        <p>Der von Dir verwendete Aktivierungslink ist ungültig. Eventuell hast Du nicht den kompletten Link aus der E-Mail verwendet?</p>
+    {% endif %}
+{% endblock %}
+
+{% block actions %}
+    <a href="{{ path('kcb_vereinsheim_profil_profil') }}" data-role="button" data-icon="back" data-inline="true" data-ajax="false">Abbrechen</a>
+{% endblock %}

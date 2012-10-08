@@ -1,0 +1,15 @@
+{% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
+
+{% block pageTitle %}Bearbeiten{% endblock %}
+
+{% block content %}
+    <p>Du wirst von uns nach dem Ausfüllen dieses Formulars eine E-Mail an Deine neue Adresse bekommen. In dieser E-Mail befindet sich ein Link. Diesen musst Du klicken, damit die E-Mail-Adresse in Deinem Profil tatsächlich geändert wird.</p>
+    <form action="{{ path('kcb_vereinsheim_profil_updateemail') }}" method="post" {{ form_enctype(form) }} data-ajax="false">
+        {{ form_widget(form) }}
+        <div><input type="submit" value="Speichern" /></div>
+    </form>
+{% endblock %}
+
+{% block actions %}
+    <a href="{{ path('kcb_vereinsheim_profil_profil') }}" data-role="button" data-icon="back" data-inline="true" data-ajax="false">Abbrechen</a>
+{% endblock %}

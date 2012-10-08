@@ -56,8 +56,7 @@ class MitgliedController extends Controller
         $form   = $this->createForm(new MitgliedType(), $entity);
 
         return array(
-            'entity' => $entity,
-            'form'   => $form->createView(),
+            'form'   => $form->createView()
         );
     }
 
@@ -91,7 +90,6 @@ class MitgliedController extends Controller
                     'passwort' => $plainPassword
                 )));
             ;
-
             $this->get('mailer')->send($message);
 
             $this->get('session')->getFlashBag()->add('mitglied_angelegt', true);
@@ -100,7 +98,6 @@ class MitgliedController extends Controller
         }
 
         return array(
-            'entity' => $entity,
             'form'   => $form->createView(),
         );
     }
@@ -147,7 +144,7 @@ class MitgliedController extends Controller
             $em->persist($entity);
             $em->flush();
 
-            return $this->redirect($this->generateUrl('kcb_vereinsheim_mitglied_index'));
+            return $this->redirect($this->generateUrl('kcb_vereinsheim_mitglied_show', array('id' => $entity->getId())));
         }
 
         return array(

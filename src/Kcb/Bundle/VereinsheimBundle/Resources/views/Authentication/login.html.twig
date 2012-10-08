@@ -16,8 +16,17 @@
             <input type="password" id="password" name="_password" />
         </div>
         <div>
+            <input type="checkbox" id="rememberme" name="_remember_me" checked="checked" />
+            <label for="rememberme">Eingeloggt bleiben</label>
+        </div>
+        <div>
             <button type="submit">Einloggen</button>
         </div>
     </form>
 {% endblock %}
+
+{% block actions %}
+    <a href="{{ path('kcb_vereinsheim_startseite_startseite') }}" data-icon="back" data-inline="true" data-role="button" data-ajax="false">Abbrechen</a>
+{% endblock %}
+
 

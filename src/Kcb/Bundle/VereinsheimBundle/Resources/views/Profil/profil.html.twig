@@ -1,0 +1,21 @@
+{% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
+
+{% block pageTitle %}Dein Profil{% endblock %}
+
+{% block content %}
+    {% include "KcbVereinsheimBundle:Mitglied:_teaser.html.twig" with {mitglied: app.user} %}
+
+    <ul data-role="controlgroup">
+        <li><a href="{{ path('kcb_vereinsheim_profil_edit') }}" data-role="button" data-icon="gear" data-ajax="false">Persönliche Daten bearbeiten</a></li>
+        <li><a href="{{ path('kcb_vereinsheim_profil_editpasswort') }}" data-role="button" data-icon="gear" data-ajax="false">Passwort ändern</a></li>
+        <li><a href="{{ path('kcb_vereinsheim_profil_editemail') }}" data-role="button" data-icon="gear" data-ajax="false">E-Mail-Adresse ändern</a></li>
+    </ul>
+
+    <ul data-role="controlgroup">
+        <li><a href="{{ path('kcb_vereinsheim_authentication_logout') }}" data-role="button" data-icon="delete" data-ajax="false">Logout</a></li>
+    </ul>
+{% endblock %}
+
+{% block actions %}
+    <a href="{{ path('kcb_vereinsheim_startseite_startseite') }}" data-role="button" data-icon="back" data-inline="true" data-ajax="false">Abbrechen</a>
+{% endblock %}

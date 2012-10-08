@@ -3,7 +3,7 @@
 {% block pageTitle %}Bearbeiten{% endblock %}
 
 {% block content %}
-    <form action="{{ path('kcb_vereinsheim_mitglied_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(form) }}>
+    <form action="{{ path('kcb_vereinsheim_mitglied_update', { 'id': entity.id }) }}" data-ajax="false" method="post" {{ form_enctype(form) }}>
         {{ form_widget(form) }}
         <div><input type="submit" value="Speichern" /></div>
     </form>

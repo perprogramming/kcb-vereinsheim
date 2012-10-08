@@ -10,18 +10,18 @@
 {% block body %}
     <div data-role="page">
         <div data-role="header">
-            <a href="{{ path('kcb_vereinsheim_startseite_startseite') }}" data-role="button" data-icon="home" data-iconpos="notext" data-ajax="false">Zurück zur Startseite</a>
+            <a href="{{ path('kcb_vereinsheim_startseite_startseite') }}" data-icon="home" data-ajax="false" data-iconpos="notext">Startseite</a>
             <h1>{{ block('pageTitle') }}</h1>
             {% if not app.user %}
-                <a href="{{ path('kcb_vereinsheim_authentication_login') }}" data-role="button" data-icon="check" data-ajax="false">Login</a>
+                <a href="{{ path('kcb_vereinsheim_authentication_login') }}" data-inline="true" data-role="button" data-icon="check" data-ajax="false">Login</a>
             {% else %}
-                <a href="{{ path('kcb_vereinsheim_authentication_logout') }}" data-role="button" data-icon="delete" data-ajax="false">Logout</a>
+                <a href="{{ path('kcb_vereinsheim_profil_profil') }}" data-inline="true" data-role="button" data-icon="gear" data-ajax="false">Profil</a>
             {% endif %}
         </div>
         <div data-role="content">
             {% block content %}{% endblock %}
         </div>
-        <div data-role="footer" class="ui-bar">
+        <div data-role="footer" class="ui-bar" data-position="fixed">
             {% block actions %}{% endblock %}
         </div>
     </div>
