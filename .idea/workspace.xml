@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="88efc301-720f-4476-8a19-dcb9e6ba8aa1" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20121007130729.php" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20121007130729.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20121008090822.php" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20121008090822.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/DoctrineMigrations/Version20121008094701.php" afterPath="$PROJECT_DIR$/app/DoctrineMigrations/Version20121008094701.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig" afterPath="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig" />
     </list>
     <ignored path="kcb-vereinsheim.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,26 +22,8 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="startseite.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/startseite.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="109" selection-start="379" selection-end="379" vertical-scroll-proportion="-5.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="startseiteAnwesende.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/startseiteAnwesende.html.twig">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="82" selection-start="909" selection-end="909" vertical-scroll-proportion="-10.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version20121007122544.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121007122544.php">
+      <file leaf-file-name="StartseiteController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/StartseiteController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -51,17 +31,8 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Version20121007130729.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121007130729.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.625">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Version20121007135208.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121007135208.php">
+      <file leaf-file-name="MitgliedController.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
@@ -69,46 +40,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Version20121008090822.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121008090822.php">
+      <file leaf-file-name="Anwesender.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Anwesender.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.625">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Version20121008094701.php" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121008094701.php">
+      <file leaf-file-name="AnwesenderRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/AnwesenderRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="0.25993884">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig">
+      <file leaf-file-name="Mitglied.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="100" selection-start="351" selection-end="351" vertical-scroll-proportion="-6.25">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="show.html.twig" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/show.html.twig">
+      <file leaf-file-name="MitgliedRepository.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/MitgliedRepository.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="138" selection-start="332" selection-end="332" vertical-scroll-proportion="-3.125">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AnwesenderController.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AnwesenderController.php">
+      <file leaf-file-name="MitgliedType.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Form/MitgliedType.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="82" selection-start="618" selection-end="618" vertical-scroll-proportion="-12.5">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KcbVereinsheimBundle.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/KcbVereinsheimBundle.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="KcbVereinsheimExtension.php" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/DependencyInjection/KcbVereinsheimExtension.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="base.html.twig" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="72" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0764526">
               <folding />
             </state>
           </provider>
@@ -133,7 +131,6 @@
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig" />
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php" />
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php" />
-        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig" />
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig" />
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/new.html.twig" />
         <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AnwesenderController.php" />
@@ -143,6 +140,7 @@
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20121007130729.php" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20121008090822.php" />
         <option value="$PROJECT_DIR$/app/DoctrineMigrations/Version20121008094701.php" />
+        <option value="$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig" />
       </list>
     </option>
   </component>
@@ -590,6 +588,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="DependencyInjection" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="kcb-vereinsheim" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Kcb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Bundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="VereinsheimBundle" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Controller" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -826,47 +854,23 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php">
+    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121007135208.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="73" column="31" selection-start="1917" selection-end="1917" vertical-scroll-proportion="-14.375">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php">
+    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121008094701.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="43" column="58" selection-start="1738" selection-end="1738" vertical-scroll-proportion="-25.0">
-          <folding>
-            <marker date="1349690872000" expanded="true" signature="2112:2198" placeholder="..." />
-            <marker date="1349690872000" expanded="true" signature="2112:2205" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="4" selection-start="1368" selection-end="1368" vertical-scroll-proportion="-19.375">
+        <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="0.25993884">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/index.html.twig">
+    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121008090822.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="4" selection-start="141" selection-end="141" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/new.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="90" selection-start="229" selection-end="229" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="0" selection-start="1964" selection-end="1964" vertical-scroll-proportion="-33.125">
+        <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="0.25993884">
           <folding />
         </state>
       </provider>
@@ -878,65 +882,89 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Mitglied/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="100" selection-start="351" selection-end="351" vertical-scroll-proportion="-6.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Anwesender/show.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="138" selection-start="332" selection-end="332" vertical-scroll-proportion="-3.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/startseite.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="109" selection-start="379" selection-end="379" vertical-scroll-proportion="-5.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Startseite/startseiteAnwesende.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="82" selection-start="909" selection-end="909" vertical-scroll-proportion="-10.625">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121007122544.php">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/AuthenticationController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121007130729.php">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Command/CreateAdminCommand.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.625">
-          <folding />
+        <state line="43" column="58" selection-start="1738" selection-end="1738" vertical-scroll-proportion="-25.625">
+          <folding>
+            <marker date="1349690872000" expanded="true" signature="2112:2198" placeholder="..." />
+            <marker date="1349690872000" expanded="true" signature="2112:2205" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121007135208.php">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/StartseiteController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121008090822.php">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Controller/MitgliedController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="-10.625">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/DoctrineMigrations/Version20121008094701.php">
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Anwesender.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="36" selection-start="503" selection-end="503" vertical-scroll-proportion="0.25993884">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/AnwesenderRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/Mitglied.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Entity/MitgliedRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Form/MitgliedType.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/KcbVereinsheimBundle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/DependencyInjection/KcbVereinsheimExtension.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Kcb/Bundle/VereinsheimBundle/Resources/views/Layout/base.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="72" selection-start="213" selection-end="213" vertical-scroll-proportion="0.0764526">
           <folding />
         </state>
       </provider>
