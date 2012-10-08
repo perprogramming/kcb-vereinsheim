@@ -1,4 +1,3 @@
-
 <?php
 
 use Symfony\Component\ClassLoader\ApcClassLoader;
