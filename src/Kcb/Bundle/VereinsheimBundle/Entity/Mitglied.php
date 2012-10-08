@@ -9,7 +9,7 @@ use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
  * @ORM\Entity(repositoryClass="Kcb\Bundle\VereinsheimBundle\Entity\MitgliedRepository")
- * @UniqueEntity(fields={"email"}, message="mitglied.email.already_in_use")
+ * @UniqueEntity(fields={"email"}, message="Diese E-Mail-Adresse wird bereits von einem anderen Mitglied verwendet!")
  */
 class Mitglied implements UserInterface {
 
@@ -22,13 +22,13 @@ class Mitglied implements UserInterface {
 
     /**
      * @ORM\Column
-     * @Assert\NotBlank(message="mitglied.vorname.not_blank")
+     * @Assert\NotBlank(message="Bitte gib einen Vornamen ein!")
      */
     protected $vorname;
 
     /**
      * @ORM\Column
-     * @Assert\NotBlank(message="mitglied.nachname.not_blank")
+     * @Assert\NotBlank(message="Bitte gib einen Nachnamen ein!")
      */
     protected $nachname;
 
@@ -39,14 +39,14 @@ class Mitglied implements UserInterface {
 
     /**
      * @ORM\Column
-     * @Assert\NotBlank(message="mitglied.email.not_blank")
-     * @Assert\Email(message="mitglied.email.valid")
+     * @Assert\NotBlank(message="Bitte gib eine E-Mail-Adresse ein!")
+     * @Assert\Email(message="Bitte gib eine gültige E-Mail-Adresse ein!")
      */
     protected $email;
 
     /**
      * @ORM\Column
-     * @Assert\NotBlank(message="mitglied.handynummer.not_blank")
+     * @Assert\NotBlank(message="Bitte gib eine Handynummer ein!")
      */
     protected $handynummer = '';
 
@@ -82,10 +82,6 @@ class Mitglied implements UserInterface {
 
     public function getNachname() {
         return $this->nachname;
-    }
-
-    public function getName() {
-        return $this->vorname . ' ' . $this->nachname;
     }
 
     public function setPasswort($passwort) {

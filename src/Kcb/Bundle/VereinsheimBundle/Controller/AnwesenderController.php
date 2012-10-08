@@ -14,11 +14,11 @@ use Kcb\Bundle\VereinsheimBundle\Entity\Anwesender;
 class AnwesenderController extends Controller {
 
     /**
-     * @Route("/")
+     * @Route("/show/{id}")
      * @Template()
      */
-    public function statusAction() {
-        return array('anwesender' => $this->getAnwesenderRepository()->findOneByMitglied($this->getUser()));
+    public function showAction($id) {
+        return array('anwesender' => $this->getAnwesenderRepository()->find($id));
     }
 
     /**
@@ -34,7 +34,7 @@ class AnwesenderController extends Controller {
             $em->persist(new Anwesender($mitglied));
         }
         $em->flush();
-        return $this->redirect($this->generateUrl('kcb_vereinsheim_anwesender_status'));
+        return $this->redirect($this->generateUrl('kcb_vereinsheim_startseite_startseite'));
     }
 
     protected function getAnwesenderRepository() {

@@ -1,46 +1,15 @@
 {% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
 
-{% block content %}
-    <h1>Mitglieder verwalten</h1>
+{% block pageTitle %}Mitglieder verwalten{% endblock %}
 
-    <table class="records_list">
-        <thead>
-            <tr>
-                <th>Vorname</th>
-                <th>Nachname</th>
-                <th>Rollen</th>
-                <th>Aktionen</th>
-            </tr>
-        </thead>
-        <tbody>
+{% block content %}
+    <ul data-role="listview" data-inset="true" data-filter="true">
         {% for entity in entities %}
-            <tr>
-                <td>{{ entity.vorname }}</td>
-                <td>{{ entity.nachname }}</td>
-                <td>
-                    {% set roleLabels = {
-                        ROLE_ADMIN: 'Admin',
-                        ROLE_MITGLIED: 'Mitglied'
-                    } %}
-                    {% for role in entity.roles %}
-                        {{ attribute(roleLabels,role) }}{% if not loop.last %}, {% endif %}
-                    {% endfor %}
-                </td>
-                <td>
-                    <ul>
-                        <li><a href="{{ path('kcb_vereinsheim_mitglied_show', { 'id': entity.id }) }}">Öffnen</a></li>
-                        <li><a href="{{ path('kcb_vereinsheim_mitglied_edit', { 'id': entity.id }) }}">Bearbeiten</a></li>
-                        <li><form action="{{ path('kcb_vereinsheim_mitglied_delete', { 'id': entity.id }) }}" method="post"><div><input type="submit" value="Löschen" /></div></li>
-                    </ul>
-                </td>
-            </tr>
+            <li><a href="{{ path('kcb_vereinsheim_mitglied_show', { 'id': entity.id }) }}" data-ajax="false">{{ entity.vorname }} {{ entity.nachname }}</a></li>
         {% endfor %}
-        </tbody>
-    </table>
+    </ul>
 {% endblock %}
 
 {% block actions %}
-    <li><a href="{{ path('kcb_vereinsheim_mitglied_new') }}">Neues Mitglied anlegen</a></li>
-    <li><a href="{{ path('kcb_vereinsheim_startseite_startseite') }}">Zurück zur Startseite</a></li>
-    {{ parent() }}
+    <a href="{{ path('kcb_vereinsheim_mitglied_new') }}" data-ajax="false" data-icon="plus">Neues Mitglied anlegen</a>
 {% endblock %}

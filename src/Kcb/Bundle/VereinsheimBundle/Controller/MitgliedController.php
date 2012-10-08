@@ -72,27 +72,31 @@ class MitgliedController extends Controller
         $form->bind($request);
 
         if ($form->isValid()) {
+            $entityManager = $this->getDoctrine()->getManager();
+
             $plainPassword = $this->get('password_generator')->generate();
 
-            $password = $this->encoderFactory->getEncoder($entity)->encodePassword($plainPassword, $entity->getSalt());
+            $password = $this->get('security.encoder_factory')->getEncoder($entity)->encodePassword($plainPassword, $entity->getSalt());
             $entity->setPasswort($password);
 
-            $this->entityManager->persist($entity);
-            $this->entityManager->flush();
+            $entityManager->persist($entity);
+            $entityManager->flush();
 
             $message = \Swift_Message::newInstance()
                 ->setSubject('Willkommen')
                 ->setFrom('vh@kickercrewbonn.de', 'Vereinsheim Kicker Crew Bonn')
                 ->setTo($entity->getEmail())
-                ->setBody($this->templatingEngine->render('KcbVereinsheimBundle:Email:neues-mitglied.txt.twig', array(
+                ->setBody($this->render('KcbVereinsheimBundle:Email:neues-mitglied.txt.twig', array(
                     'mitglied' => $entity,
                     'passwort' => $plainPassword
                 )));
             ;
 
-            $this->mailer->send($message);
+            $this->get('mailer')->send($message);
 
-            return $this->redirect($this->generateUrl('kcb_vereinsheim_mitglied_show', array('id' => $entity->getId())));
+            $this->get('session')->getFlashBag()->add('mitglied_angelegt', true);
+
+            return $this->redirect($this->generateUrl('kcb_vereinsheim_mitglied_index', array('id' => $entity->getId())));
         }
 
         return array(

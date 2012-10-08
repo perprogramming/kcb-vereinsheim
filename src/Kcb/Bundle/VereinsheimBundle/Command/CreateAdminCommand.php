@@ -19,7 +19,6 @@ class CreateAdminCommand extends ContainerAwareCommand {
         $em = $this->getContainer()->get('doctrine')->getManager();
         $dialog = $this->getHelperSet()->get('dialog');
         $validator = $this->getContainer()->get('validator');
-        $translator = $this->getContainer()->get('translator');
 
         $admin = new Mitglied();
         $admin->addRolle('ROLE_ADMIN');
@@ -35,14 +34,14 @@ class CreateAdminCommand extends ContainerAwareCommand {
                 $setter = 'set' . ucfirst($property);
                 $admin->$setter($value);
                 if (($errors = $validator->validateProperty($admin, $property)) && count($errors)) {
-                    throw new \Exception($translator->trans($errors[0]->getMessage()));
+                    throw new \Exception($errors[0]->getMessage());
                 }
             });
         }
 
         $errors = $validator->validate($admin);
         if (count($errors)) {
-            throw new \Exception($translator->trans($errors[0]->getMessage()));
+            throw new \Exception($errors[0]->getMessage());
         }
 
         $plainPassword = $this->getContainer()->get('password_generator')->generate();

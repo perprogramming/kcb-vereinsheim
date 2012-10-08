@@ -1,13 +1,19 @@
 <h2>Wer ist zur Zeit anwesend?</h2>
 {% if anwesende %}
     <p>Zur Zeit sind folgende Mitglieder im Vereinsheim:</p>
-    <ul>
+    <ul data-role="listview" data-inset="true">
         {% for anwesender in anwesende %}
-            <li>
-                {{ anwesender.mitglied.name }} (seit {{ anwesender.ankunft.format('d.m.Y H:i:s') }})
-            </li>
+            <li><a data-ajax="false" href="{{ path('kcb_vereinsheim_anwesender_show', {id: anwesender.id}) }}">{{ anwesender.mitglied.vorname }} {{ anwesender.mitglied.nachname }}</a></li>
         {% endfor %}
     </ul>
 {% else %}
     <p>Zur Zeit sind keine Mitglieder im Vereinsheim.</p>
+{% endif %}
+
+{% if is_granted('ROLE_MITGLIED') %}
+    <div data-role="controlgroup" data-type="horizontal">
+        <form method="post" action="{{ path('kcb_vereinsheim_anwesender_toggle') }}" data-ajax="false"><input type="submit" value="Deinen Status ändern" data-icon="refresh" data-inline="true" /></form>
+    </div>
+{% else %}
+    <p>Wenn Du Deinen Anwesenheitsstatus ändern möchtest, musst Du Dich einloggen.</p>
 {% endif %}

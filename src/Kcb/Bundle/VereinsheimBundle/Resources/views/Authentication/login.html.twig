@@ -1,11 +1,12 @@
 {% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
 
+{% block pageTitle %}Einloggen{% endblock %}
+
 {% block content %}
-    <h1>Einloggen</h1>
     {% if error %}
         <div>Du konntest nicht eingeloggt werden! Vielleicht ist der Benutzername oder Dein Passwort falsch?</div>
     {% endif %}
-    <form action="{{ path('kcb_vereinsheim_authentication_logincheck') }}" method="post">
+    <form action="{{ path('kcb_vereinsheim_authentication_logincheck') }}" method="post" data-ajax="false">
         <div>
             <label for="email">E-Mail:</label>
             <input type="text" id="email" name="_username" value="{{ last_username }}" />
@@ -20,6 +21,3 @@
     </form>
 {% endblock %}
 
-{% block actions %}
-    <li><a href="{{ path('kcb_vereinsheim_startseite_startseite') }}">Abbrechen</a></li>
-{% endblock %}

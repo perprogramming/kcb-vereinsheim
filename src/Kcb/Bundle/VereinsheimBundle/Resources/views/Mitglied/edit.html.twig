@@ -1,7 +1,8 @@
 {% extends "KcbVereinsheimBundle:Layout:base.html.twig" %}
 
+{% block pageTitle %}Mitglied bearbeiten{% endblock %}
+
 {% block content %}
-    <h1>Mitglied bearbeiten</h1>
     <form action="{{ path('kcb_vereinsheim_mitglied_update', { 'id': entity.id }) }}" method="post" {{ form_enctype(form) }}>
         {{ form_widget(form) }}
         <div><input type="submit" value="Speichern" /></div>
@@ -9,5 +10,5 @@
 {% endblock %}
 
 {% block actions %}
-    <li><a href="{{ path('kcb_vereinsheim_mitglied_index') }}">Abbrechen</a></li>
+    <li><a href="{{ path('kcb_vereinsheim_mitglied_index') }}" data-role="back">Abbrechen</a></li>
 {% endblock %}

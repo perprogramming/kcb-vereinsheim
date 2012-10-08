@@ -23,5 +23,5 @@ security:
             logout: ~
 
     access_control:
-#        - { path: ^/anwesende, roles: ROLE_MITGLIED }
-#        - { path: ^/mitglieder, roles: ROLE_ADMIN }
+        - { path: ^/anwesende, roles: ROLE_MITGLIED }
+        - { path: ^/mitglieder, roles: ROLE_ADMIN }

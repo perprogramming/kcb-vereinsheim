@@ -1,17 +1,32 @@
 {% extends "::base.html.twig" %}
 
-{% block title %}KCB Vereinsheim{% endblock %}
+{% block title %}{% block pageTitle %}{% endblock %}KCB Vereinsheim{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+{% endblock %}
 
 {% block body %}
-    {% block content %}{% endblock %}
-    <h2>Was möchtest Du tun</h2>
-    <ul>
-        {% block actions %}
+    <div data-role="page">
+        <div data-role="header">
+            <a href="{{ path('kcb_vereinsheim_startseite_startseite') }}" data-role="button" data-icon="home" data-iconpos="notext" data-ajax="false">Zurück zur Startseite</a>
+            <h1>{{ block('pageTitle') }}</h1>
             {% if not app.user %}
-                <li><a href="{{ path('kcb_vereinsheim_authentication_login') }}">Einloggen</a></li>
+                <a href="{{ path('kcb_vereinsheim_authentication_login') }}" data-role="button" data-icon="check" data-ajax="false">Einloggen</a>
             {% else %}
-                <li><a href="{{ path('kcb_vereinsheim_authentication_logout') }}">Ausloggen</a></li>
+                <a href="{{ path('kcb_vereinsheim_authentication_logout') }}" data-role="button" data-icon="delete" data-ajax="false">Ausloggen</a>
             {% endif %}
-        {% endblock %}
-    </ul>
+        </div>
+        <div data-role="content">
+            {% block content %}{% endblock %}
+        </div>
+        <div data-role="footer" class="ui-bar">
+            {% block actions %}{% endblock %}
+        </div>
+    </div>
+{% endblock %}
+
+{% block javascripts %}
+    <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
 {% endblock %}
